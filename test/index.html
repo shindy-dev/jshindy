@@ -6,10 +6,22 @@
     <title>JShindy</title>
     <script type="module" src="test.js">
     </script>
+    <script>
+        const executeTest = function () {
+            "use strict";
+
+            try {
+                test();
+            } catch (e) {
+                console.log(e.stack);
+                alert(e.stack);
+            };
+        };
+    </script>
 </head>
 
 <body>
-    <button type="button" onclick="try{test()}catch(e){alert(e)}">
+    <button type="button" onclick="executeTest();">
         Execute
     </button>
 </body>

@@ -22,14 +22,17 @@ window.executeTest = function () {
 
 
 // 以下、テストサンプル
-import { calc } from "./sample.js";
+// import { calc } from "./sample.js";
 
-function testA() {
-    alert(calc(30, 5));
-};
+// function testA() {
+//     alert(calc(30, 5));
+// };
 
-// テストしたい関数名を代入してください。
-test = testA;
+// // テストしたい関数名を代入してください。
+// test = testA;
 // 以上、テストサンプル
+
+import { main } from "../mylib/learning.js";
+test = main;
 
 
